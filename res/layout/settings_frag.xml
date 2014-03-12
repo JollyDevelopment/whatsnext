@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/settings_background" >
+    
+    <View
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="@integer/constant_frag_middle_view_weight" >
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/constant_actionbar_height"
+                />
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/constant_separator_bar"
+                android:background="@color/horizontal_separator_grey_blue"                
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/constant_separator_bar"
+                android:background="@color/horizontal_separator_grey_blue" 
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            
+            <LinearLayout
+                android:id="@+id/settings_frag_about_clickableLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true" >
+                
+                <ImageView
+                    android:layout_width="@dimen/constant_actionbar_height"
+                    android:layout_height="@dimen/constant_actionbar_height"
+                    android:src="@drawable/about_icon" />
+                
+                <TextView 
+                    android:paddingLeft="5dp"                    
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_frag_About_display"
+                    android:textSize="30sp"
+                    android:typeface="serif"
+                    android:textColor="@color/settings_text_color"                    
+                    />
+                
+            </LinearLayout>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/constant_separator_bar"
+                android:background="@color/horizontal_separator_grey_blue" 
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            
+            <LinearLayout
+                android:id="@+id/settings_frag_changelog_clickableLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true" >
+                
+                <ImageView
+                    android:layout_width="@dimen/constant_actionbar_height"
+                    android:layout_height="@dimen/constant_actionbar_height"
+                    android:src="@drawable/changelog_icon" />
+                
+                <TextView 
+                    android:paddingLeft="5dp"                    
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_frag_ChangeLog_display"
+                    android:textSize="30sp"
+                    android:typeface="serif"  
+                    android:textColor="@color/settings_text_color"            
+                    />
+                
+            </LinearLayout>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/constant_separator_bar"
+                android:background="@color/horizontal_separator_grey_blue" 
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            
+            <LinearLayout
+                android:id="@+id/settings_frag_opensourcelicensing_clickableLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true" >
+                
+                <ImageView
+                    android:layout_width="@dimen/constant_actionbar_height"
+                    android:layout_height="@dimen/constant_actionbar_height"
+                    android:src="@drawable/opensourcelicensing_icon" />
+                
+                <TextView 
+                    android:paddingLeft="5dp"                    
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_frag_OpenSourceLicensing_display"
+                    android:textSize="30sp"
+                    android:typeface="serif"
+                    android:textColor="@color/settings_text_color"              
+                    />
+                
+            </LinearLayout>
+                        
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/constant_separator_bar"
+                android:background="@color/horizontal_separator_grey_blue"                
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/constant_separator_bar"
+                android:background="@color/horizontal_separator_grey_blue" 
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />          
+            
+        </LinearLayout>
+        
+    </ScrollView>
+    
+    <View
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

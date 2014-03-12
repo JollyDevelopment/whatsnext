@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="constant_actionbar_height">48dp</dimen>
+    <dimen name="constant_text_header">20sp</dimen>
+    <dimen name="constant_social_media_icons">20dp</dimen>
+    <dimen name="constant_changelog_date_shortline_length">30dp</dimen>
+    <dimen name="constant_separator_bar">1dp</dimen>
+        
+    <dimen name="starthere_responsive_slidingmenu_offset">150dp</dimen>
+    <dimen name="starthere_responsive_shadow_width">10dp</dimen>
+    
+    <dimen name="new_task_separater_view_height">10dp</dimen>
+    
+    <dimen name="list_item_icon_padding">10dp</dimen>
+    
+    <dimen name="daily_list_item_taskID_small_size">10sp</dimen>
+    <dimen name="daily_list_item_icon_paddingTop">2dp</dimen>
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <View 
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        />
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/constant_actionbar_height"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opensource_frag_initial_blurb"
+            />
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/constant_separator_bar"
+            />
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/constant_separator_bar"
+            android:background="@color/horizontal_separator_dark_gray"
+            />
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opensource_frag_slidingmenu_title"
+            />
+         <View 
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            />
+          <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opensource_frag_slidingmenu_license"
+            />
+         
+        
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

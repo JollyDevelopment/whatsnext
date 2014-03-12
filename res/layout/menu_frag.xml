@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="@integer/constant_frag_middle_view_weight"
+        android:background="@drawable/back_repeat" >
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/constant_actionbar_height"
+                />
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/constant_separator_bar"
+                android:background="@color/horizontal_separator_black"                
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/constant_separator_bar"
+                android:background="@color/horizontal_separator_black" 
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            
+            <LinearLayout
+                android:id="@+id/menu_frag_agenda_clickableLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/linearlayout_click_pressed" >
+                
+                <ImageView
+                    android:layout_width="@dimen/constant_actionbar_height"
+                    android:layout_height="@dimen/constant_actionbar_height"
+                    android:src="@drawable/agenda_icon" />
+                
+                <TextView 
+                    android:paddingLeft="5dp"                    
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_frag_Agenda_display"
+                    android:textSize="30sp"
+                    android:typeface="serif"                    
+                    />
+                
+            </LinearLayout>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/constant_separator_bar"
+                android:background="@color/horizontal_separator_black" 
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            
+            <LinearLayout
+                android:id="@+id/menu_frag_daily_clickableLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/linearlayout_click_pressed" >
+                
+                <ImageView
+                    android:layout_width="@dimen/constant_actionbar_height"
+                    android:layout_height="@dimen/constant_actionbar_height"
+                    android:src="@drawable/daily_icon" />
+                
+                <TextView 
+                    android:paddingLeft="5dp"                    
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_frag_Daily_display"
+                    android:textSize="30sp"
+                    android:typeface="serif"                    
+                    />
+                
+            </LinearLayout>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/constant_separator_bar"
+                android:background="@color/horizontal_separator_black" 
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            
+            <LinearLayout
+                android:id="@+id/menu_frag_weekly_clickableLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/linearlayout_click_pressed" >
+                
+                <ImageView
+                    android:layout_width="@dimen/constant_actionbar_height"
+                    android:layout_height="@dimen/constant_actionbar_height"
+                    android:src="@drawable/weekly_icon" />
+                
+                <TextView 
+                    android:paddingLeft="5dp"                    
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_frag_Weekly_display"
+                    android:textSize="30sp"
+                    android:typeface="serif"                    
+                    />
+                
+            </LinearLayout>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/constant_separator_bar"
+                android:background="@color/horizontal_separator_black" 
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            
+            <LinearLayout
+                android:id="@+id/menu_frag_monthly_clickableLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/linearlayout_click_pressed" >
+                
+                <ImageView
+                    android:layout_width="@dimen/constant_actionbar_height"
+                    android:layout_height="@dimen/constant_actionbar_height"
+                    android:src="@drawable/monthly_icon" />
+                
+                <TextView 
+                    android:paddingLeft="5dp"                    
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_frag_Monthly_display"
+                    android:textSize="30sp"
+                    android:typeface="serif"                    
+                    />
+                
+            </LinearLayout>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/constant_separator_bar"
+                android:background="@color/horizontal_separator_black"                
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/constant_separator_bar"
+                android:background="@color/horizontal_separator_black" 
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            
+            <LinearLayout
+                android:id="@+id/menu_frag_settings_clickableLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/linearlayout_click_pressed" >
+                                                
+                <TextView 
+                    android:paddingLeft="5dp"                    
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_frag_Settings_display"
+                    android:textSize="20sp"
+                    android:typeface="serif"                    
+                    />
+                
+            </LinearLayout>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/constant_separator_bar"
+                android:background="@color/horizontal_separator_black" 
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"                
+                />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/horizontal_separator_black" />
+
+</LinearLayout>

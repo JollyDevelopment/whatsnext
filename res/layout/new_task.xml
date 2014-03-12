@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="@integer/constant_new_task_side_views_weight" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="@integer/constant_new_task_middle_view_weight"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/constant_actionbar_height" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/new_task_DailyIcon_img"
+                        android:layout_width="@dimen/constant_actionbar_height"
+                        android:layout_height="@dimen/constant_actionbar_height"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/daily_icon" />
+
+                    <RadioButton
+                        android:id="@+id/new_task_DailyChoice_radio_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/new_task_DailyIcon_img"
+                        android:layout_centerInParent="true"
+                        android:checked="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/new_task_WeeklyIcon_img"
+                        android:layout_width="@dimen/constant_actionbar_height"
+                        android:layout_height="@dimen/constant_actionbar_height"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/weekly_icon" />
+
+                    <RadioButton
+                        android:id="@+id/new_task_WeeklyChoice_radio_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/new_task_WeeklyIcon_img"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/new_task_MonthlyIcon_img"
+                        android:layout_width="@dimen/constant_actionbar_height"
+                        android:layout_height="@dimen/constant_actionbar_height"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/monthly_icon" />
+
+                    <RadioButton
+                        android:id="@+id/new_task_MonthlyChoice_radio_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/new_task_MonthlyIcon_img"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/constant_actionbar_height" />
+
+        <TextView            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="@string/new_task_TaskDescriptionHere_txtview" />
+
+        <EditText
+            android:id="@+id/new_task_TaskDescription_edittxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/constant_actionbar_height"
+            android:hint="@string/new_task_TaskDescriptionHint_hint" />
+
+        <!-- Icon Holder -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/constant_actionbar_height" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/new_task_Save_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_task_Save_button" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/new_task_Clear_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_task_Clear_button" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="@integer/constant_new_task_side_views_weight" />
+
+</LinearLayout>

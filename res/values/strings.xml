@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WhatsNext</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="constant_Agenda_Frag_Name">Agenda_Frag</string>
+    <string name="constant_Daily_Frag_Name">Daily_Frag</string>
+    <string name="constant_Weekly_Frag_Name">Weekly_Frag</string>
+    <string name="constant_Monthly_Frag_Name">Monthly_Frag</string>
+    
+    <string name="menu_frag_Agenda_display">genda</string>
+    <string name="menu_frag_Daily_display">aily</string>
+    <string name="menu_frag_Weekly_display">eekly</string>
+    <string name="menu_frag_Monthly_display">onthly</string>
+    <string name="menu_frag_Settings_display">settings</string>
+    
+    <string name="settings_frag_About_display">bout</string>
+    <string name="settings_frag_ChangeLog_display">hange Log</string>
+    <string name="settings_frag_OpenSourceLicensing_display">pen Source</string>
+    
+    <string name="about_frag_About_Us_title">About Us</string>
+    <string name="about_frag_About_Us_Blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper lobortis ante, non tempus neque tincidunt et. Morbi quis auctor eros. Ut ac nisl sapien. Duis non magna congue odio pretium luctus sit amet quis leo. Integer tempus fermentum ultrices. In pretium porttitor neque sit amet tempus.</string>
+    <string name="about_frag_Contact_title">Get in touch!</string>
+    <string name="about_frag_Feature_Request_button_text">Feature Request</string>
+    <string name="about_frag_facebook_link_display">\/jolly.development</string>
+    <string name="about_frag_twitter_link_display">\@JollyDevel</string>
+    <string name="about_frag_googleplus_link_display">+jollydevelopment</string>
+    <string name="about_frag_email_link_display">jolly.development@gmail.com</string>
+    <string name="about_frag_FeatureRequest_title">Feature Request</string>
+    <string name="about_frag_featurerequest_button_text">Feature Request</string>
+    <string name="about_frag_Request_Blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper lobortis ante, non tempus neque tincidunt et. Morbi quis auctor eros. Ut ac nisl sapien. Duis non magna congue odio pretium luctus sit amet quis leo. Integer tempus fermentum ultrices. In pretium porttitor neque sit amet tempus.</string>
+    
+    <string name="changelog_date_0001">Date Goes Here</string>
+    <string name="changelog_versioning_info_0001">Version 0.1</string>
+    <string name="changelog_changes_0001">Initial Release</string>
+    
+    <string name="opensource_frag_initial_blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper lobortis ante, non tempus neque tincidunt et. Morbi quis auctor eros. Ut ac nisl sapien. Duis non magna congue odio pretium luctus sit amet quis leo.</string>
+    <string name="opensource_frag_slidingmenu_title">Sliding Menu Library</string>
+    <string name="opensource_frag_slidingmenu_license">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper lobortis ante, non tempus neque tincidunt et. Morbi quis auctor eros. Ut ac nisl sapien. Duis non magna congue odio pretium luctus sit amet quis leo.</string>
+    
+    <string name="new_task_TaskDescriptionHere_txtview">Task Description\:</string>
+    <string name="new_task_PickAList_txtview">Pick A List\:</string>
+    <string name="new_task_Save_button">Save</string>
+    <string name="new_task_Clear_button">Clear</string>
+    <string name="new_task_TaskDescriptionHint_hint">Ex\: Walk the Dog</string>
+    
+    <string name="menu_items_add_item">New Task</string>
+
+</resources>

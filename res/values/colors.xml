@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="horizontal_separator_light_blue">#ff33b5e5</color>
+    <color name="horizontal_separator_grey_blue">#A8A1C9</color>
+    <color name="horizontal_separator_light_gray">#ddd</color>
+    <color name="horizontal_separator_dark_gray">#aaa</color>
+    <color name="horizontal_separator_black">#000000</color>
+    
+    <color name="settings_background">#3B374F</color>
+    <color name="settings_text_color">#B5ADD9</color>
+    
+    <color name="transparent">#17170445</color>
+    
+</resources>

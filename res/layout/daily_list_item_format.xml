@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/constant_actionbar_height"
+            android:layout_height="@dimen/constant_actionbar_height"
+            android:paddingRight="@dimen/list_item_icon_padding"
+            android:src="@drawable/daily_icon_rotated" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/daily_list_item_TaskDescription_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:paddingTop="@dimen/daily_list_item_icon_paddingTop" />
+
+            <TextView
+                android:id="@+id/daily_list_item_TaskId_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small Text"
+                android:textSize="@dimen/daily_list_item_taskID_small_size"
+                android:layout_below="@id/daily_list_item_TaskDescription_txtview" />"
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <integer name="constant_frag_middle_view_weight">20</integer>
+    <integer name="constant_new_task_middle_view_weight">16</integer>
+    <integer name="constant_new_task_side_views_weight">3</integer>
+    
+</resources>

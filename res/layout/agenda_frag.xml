@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <View 
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        />
+    
+    <LinearLayout 
+        android:layout_weight="@integer/constant_frag_middle_view_weight"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/agenda_bkgrnd_tile" >
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/constant_actionbar_height"
+            />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="This is the Agenda Fragment" />
+        
+        <ListView 
+            android:id="@+id/agenda_frag_daily_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" ></ListView>
+        <ListView 
+            android:id="@+id/agenda_frag_weekly_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" ></ListView>
+        <ListView 
+            android:id="@+id/agenda_frag_monthly_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" ></ListView>
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        />
+    
+
+</LinearLayout>
