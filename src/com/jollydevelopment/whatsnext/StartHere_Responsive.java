@@ -65,7 +65,7 @@ public class StartHere_Responsive extends SlidingFragmentActivity implements fra
 			getSlidingMenu().setSlidingEnabled(true);
 			getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);			
 			// show home as up so we can toggle
-			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+			getActionBar().setDisplayHomeAsUpEnabled(true);
 		} else {
 			// add a dummy view
 			View v = new View(this);
@@ -114,9 +114,8 @@ public class StartHere_Responsive extends SlidingFragmentActivity implements fra
 	/*
 	 * Override the menu items in the ActionBarSherlock
 	 */
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-	   MenuInflater inflater = getSupportMenuInflater();
+	public boolean onCreateOptionsMenu(android.view.Menu menu) {
+	   android.view.MenuInflater inflater = getMenuInflater();
 	   inflater.inflate(R.menu.menu_items, menu);
 	   return true;
 	}//end of onCreateOptionsMenu
@@ -126,11 +125,11 @@ public class StartHere_Responsive extends SlidingFragmentActivity implements fra
 	/*
 	 * This next sets the SherlockActionBar icon to be able to toggle the slidingmenu open/closed
 	 */
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
+	public boolean onOptionsItemSelected(android.view.MenuItem item) {
 		switch (item.getItemId()) {
 		case android.R.id.home:
 			toggle();
+			break;
 		case R.id.menu_items_add_item:
 			//change the fragment in the Content_Frame to be the New_Task_Frag
 			getSupportFragmentManager()
@@ -138,6 +137,7 @@ public class StartHere_Responsive extends SlidingFragmentActivity implements fra
 			.replace(R.id.starthere_responsive_contentFrame, new New_Task_Frag())
 			.commit();	
 			//Toast.makeText(this, "New Task Pressed", Toast.LENGTH_LONG).show();
+			break;
 		}//end of switch
 		return super.onOptionsItemSelected(item);
 	}//end of onOoptionsItemSelected()

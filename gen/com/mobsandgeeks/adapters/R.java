@@ -11,6 +11,6 @@ public final class R {
 		public static final int ic_launcher = 0x7f02007f;
 	}
 	public static final class string {
-		public static final int library_name = 0x7f09000d;
+		public static final int library_name = 0x7f050000;
 	}
 }
