@@ -27,20 +27,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="This is the Agenda Fragment" />
+            android:text="This is the Agenda Fragment"
+            android:visibility="gone" />
         
+        <ListView 
+            android:id="@+id/agenda_frag_agenda_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" ></ListView>        
         <ListView 
             android:id="@+id/agenda_frag_daily_listview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" ></ListView>
+            android:layout_height="wrap_content" ></ListView>
         <ListView 
             android:id="@+id/agenda_frag_weekly_listview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" ></ListView>
+            android:layout_height="wrap_content" ></ListView>
         <ListView 
             android:id="@+id/agenda_frag_monthly_listview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" ></ListView>
+            android:layout_height="wrap_content" ></ListView>
         
     </LinearLayout>
     

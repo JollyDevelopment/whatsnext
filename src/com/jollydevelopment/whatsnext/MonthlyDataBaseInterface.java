@@ -20,12 +20,13 @@ public class MonthlyDataBaseInterface extends SQLiteOpenHelper {
 	public static final String COLUMN_ID = "_id";
 	//public static final String COLUMN_TASK_NAME = "task_name";
 	public static final String COLUMN_TASK_DESCRIPTION = "task_description";
+	public static final String COLUMN_LIST_NAME = "list_name";
 	
 	
 	//Create a string that will be the command line command
 	//The string will look like this to the OS:
-	//"CREATE TABLE tasks (_id INTEGER PRIMARY KEY, task_description TEXT NOT NULL)"
-	private static final String CREATE_DATABASE = "CREATE TABLE " + TABLE_NAME_TASKS + " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COLUMN_TASK_DESCRIPTION + " TEXT NOT NULL);";
+	//"CREATE TABLE tasks (_id INTEGER PRIMARY KEY AUTOINCREMENT, task_description TEXT NOT NULL, list_name TEXT NOT NULL)"
+	private static final String CREATE_DATABASE = "CREATE TABLE " + TABLE_NAME_TASKS + " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COLUMN_TASK_DESCRIPTION + " TEXT NOT NULL, " + COLUMN_LIST_NAME + " TEXT NOT NULL);";
 	
 	
 	//Constructor. When this is called it will either access or create the database with the name
@@ -75,6 +76,7 @@ public class MonthlyDataBaseInterface extends SQLiteOpenHelper {
 		//get the value(s) from the Contact and put them into a ContentValues holder
 		ContentValues values = new ContentValues();		
 		values.put(COLUMN_TASK_DESCRIPTION, task.getTaskDescription());
+		values.put(COLUMN_LIST_NAME, task.getTaskListName());
 		
 		//insert the values above into the "tasks" table in the database
 		db.insert(TABLE_NAME_TASKS, null, values);
@@ -91,6 +93,9 @@ public class MonthlyDataBaseInterface extends SQLiteOpenHelper {
 		
     // Getting single contact
 	public Task getTask(long _id) {
+		//create a Task
+		Task task;
+		
 		//connect to the database to read from it
 	    SQLiteDatabase db = this.getReadableDatabase();
 	    
@@ -105,10 +110,11 @@ public class MonthlyDataBaseInterface extends SQLiteOpenHelper {
 	        cursor.moveToFirst();
 	    
 	    //make a new Task object and fill it with the data from the database row
+	    //constructor = Task(int, string, string) 
 	    // 0 = _id
 	    // 1 = taskDescription
-	    Task task = new Task(Integer.parseInt(cursor.getString(0)),
-	            cursor.getString(1));
+	    // 2 = taskListName
+    	task = new Task(Integer.parseInt(cursor.getString(0)), cursor.getString(1), cursor.getString(2));
 	    
 	    // return contact
 	    return task;
@@ -138,6 +144,7 @@ public class MonthlyDataBaseInterface extends SQLiteOpenHelper {
 		//each row
 	    // 0 = _id
 	    // 1 = taskDescription	
+		// 2 = taskListName
 		
 		//if cursor.moveToFirst() returns "true" then do the following
 		if (cursor.moveToFirst()) {
@@ -146,6 +153,7 @@ public class MonthlyDataBaseInterface extends SQLiteOpenHelper {
 				Task task = new Task();
 				task.setId(Integer.parseInt(cursor.getString(0)));
 				task.setTaskDescription(cursor.getString(1));
+				task.setTaskListName(cursor.getString(2));
 				//add that task to the ArrayList<Task>
 				allTasks.add(task);				
 			}//end of do

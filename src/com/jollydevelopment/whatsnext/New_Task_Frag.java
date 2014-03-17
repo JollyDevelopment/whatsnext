@@ -168,7 +168,7 @@ public class New_Task_Frag extends Fragment implements OnClickListener {
 			DailyDataBaseInterface ddbi = new DailyDataBaseInterface(getActivity());
 			
 			//make a new Task with the taskDescription
-			Task newTask = new Task(taskDescription);
+			Task newTask = new Task(taskDescription, taskDataBaseSelection);
 			
 			//store that task in the Database
 			ddbi.addTask(newTask);
@@ -188,7 +188,7 @@ public class New_Task_Frag extends Fragment implements OnClickListener {
 			WeeklyDataBaseInterface wdbi = new WeeklyDataBaseInterface(getActivity());
 			
 			//make a new Task with the taskDescription
-			Task newTask = new Task(taskDescription);
+			Task newTask = new Task(taskDescription, taskDataBaseSelection);
 			
 			//store that task in the Database
 			wdbi.addTask(newTask);
@@ -208,7 +208,7 @@ public class New_Task_Frag extends Fragment implements OnClickListener {
 			MonthlyDataBaseInterface mdbi = new MonthlyDataBaseInterface(getActivity());
 			
 			//make a new Task with the taskDescription
-			Task newTask = new Task(taskDescription);
+			Task newTask = new Task(taskDescription, taskDataBaseSelection);
 			
 			//store that task in the Database
 			mdbi.addTask(newTask);

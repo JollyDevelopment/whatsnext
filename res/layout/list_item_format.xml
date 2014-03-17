@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@drawable/bluestripe_border_white_interior_dropshadow" >
     
-    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_textView_holder_linearLayout"
+        android:orientation="horizontal" >
+
         <RelativeLayout
+            android:id="@+id/list_item_textView_holder_relativeLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="@dimen/list_item_icon_padding" >
@@ -14,18 +21,42 @@
                 android:id="@+id/list_item_format_TaskDescription_txtview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/list_item_large_text_padding"
+                android:layout_marginTop="@dimen/list_item_large_text_padding"
+                android:paddingTop="@dimen/daily_list_item_icon_paddingTop"
                 android:text="Large Text"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:paddingTop="@dimen/daily_list_item_icon_paddingTop" />
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/list_item_format_TaskListName_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/list_item_format_TaskDescription_txtview"
+                android:layout_alignParentLeft="false"
+                android:layout_below="@id/list_item_format_TaskDescription_txtview"
+                android:text="TextView"
+                android:textSize="@dimen/list_item_smallText_size" />
 
             <TextView
                 android:id="@+id/list_item_format_TaskId_txtview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/list_item_format_TaskDescription_txtview"
+                android:layout_marginLeft="@dimen/list_item_large_text_padding"
+                android:layout_toRightOf="@id/list_item_format_TaskListName_txtview"
                 android:text="Small Text"
-                android:textSize="@dimen/daily_list_item_taskID_small_size"
-                android:layout_below="@id/list_item_format_TaskDescription_txtview" />"
+                android:textSize="@dimen/daily_list_item_taskID_small_size" />
 
         </RelativeLayout>
+        
+	</LinearLayout>
 
-</LinearLayout>
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/list_item_large_text_padding" />
+
+</RelativeLayout>

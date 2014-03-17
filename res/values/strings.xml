@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">WhatsNext</string>
+    <string name="app_name">What\'s Next\?</string>
     <string name="action_settings">Settings</string>
     
     <string name="constant_Agenda_Frag_Name">Agenda_Frag</string>

@@ -72,6 +72,8 @@ public class StartHere_Responsive extends SlidingFragmentActivity implements fra
 			setBehindContentView(v);
 			getSlidingMenu().setSlidingEnabled(false);
 			getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_NONE);
+			//set the isTablet variable to true
+			isTablet = true;
 		}//end of else
 		
 		/*
@@ -151,7 +153,14 @@ public class StartHere_Responsive extends SlidingFragmentActivity implements fra
 	@Override
 	public void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
-		getSupportFragmentManager().putFragment(outState, "ContentFragmentContents", contentFrag);
+		
+		//save the current Conent_Frame fragment to the bundle
+		try {
+			getSupportFragmentManager().putFragment(outState, "ContentFragmentContents", contentFrag);
+		}
+		catch (Exception e) {};
+		
+		
 	}//end of onSaveInstanceState()
 	
 	
@@ -169,7 +178,23 @@ public class StartHere_Responsive extends SlidingFragmentActivity implements fra
 			getSupportFragmentManager()
 			.beginTransaction()
 			.replace(R.id.starthere_responsive_contentFrame, new Agenda_Frag())
-			.commit();			
+			.commit();		
+			
+			//check if the screen does not contain starthere_responsive_menuFrame. If it doesn't 
+			//then that means its a non-tablet screen, and the toggle() should be applied
+			if (findViewById(R.id.starthere_responsive_menuFrame) == null) {			
+				//close the drawer
+				toggle();
+				//TEST: toast to see if the code gets here
+				Toast.makeText(getBaseContext(), "Agenda Frag Toggle Pressed", Toast.LENGTH_LONG).show();
+			}//end of if
+			
+			//if the device is not a tablet, toggle the sliding menu
+			if (isTablet != true) {
+				//close the drawer
+				toggle();
+			}//end of if
+			
 		}//end of if
 		else if (fragString == "@string/constant_Daily_Frag_Name") {
 			// set the Daily_Frag to the Content_Frame
@@ -177,6 +202,13 @@ public class StartHere_Responsive extends SlidingFragmentActivity implements fra
 			.beginTransaction()
 			.replace(R.id.starthere_responsive_contentFrame, new Daily_Frag())
 			.commit();
+			
+			//if the device is not a tablet, toggle the sliding menu
+			if (isTablet != true) {
+				//close the drawer
+				toggle();
+			}//end of if
+			
 		}//end of else if
 		else if (fragString == "@string/constant_Weekly_Frag_Name") {
 			// set the Weekly_Frag to the Content_Frame
@@ -184,6 +216,13 @@ public class StartHere_Responsive extends SlidingFragmentActivity implements fra
 			.beginTransaction()
 			.replace(R.id.starthere_responsive_contentFrame, new Weekly_Frag())
 			.commit();
+			
+			//if the device is not a tablet, toggle the sliding menu
+			if (isTablet != true) {
+				//close the drawer
+				toggle();
+			}//end of if
+			
 		}//end of else if
 		else if (fragString == "@string/constant_Monthly_Frag_Name") {
 			// set the Monthly_Frag to the Content_Frame
@@ -191,6 +230,13 @@ public class StartHere_Responsive extends SlidingFragmentActivity implements fra
 			.beginTransaction()
 			.replace(R.id.starthere_responsive_contentFrame, new Monthly_Frag())
 			.commit();
+			
+			//if the device is not a tablet, toggle the sliding menu
+			if (isTablet != true) {
+				//close the drawer
+				toggle();
+			}//end of if
+			
 		}//end of else if
 	}//end of onDataPass()
 	
@@ -216,6 +262,8 @@ public class StartHere_Responsive extends SlidingFragmentActivity implements fra
 	//Fragments
 	Fragment menuFrag, contentFrag;
 	//FragmentTransactions
-	FragmentTransaction FragTrans;	
+	FragmentTransaction FragTrans;
+	//Booleans
+	Boolean isTablet = false;
 	//end of variables
 }//end of class

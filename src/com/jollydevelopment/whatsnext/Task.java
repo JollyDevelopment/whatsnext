@@ -13,14 +13,25 @@ public class Task {
 	public Task(String taskDescription) {		
 		this.taskDescription = taskDescription;
 	}//end of constructor
-	
-		
-	//Constructor, both parameters
+			
+	//Constructor, two parameters
 	public Task(int _id, String taskDescription) {
 		this._id = _id;
 		this.taskDescription = taskDescription;
 	}//end of constructor
 	
+	//Constructor, two parameters
+	public Task(String taskDescription, String taskListName) {
+		this.taskDescription = taskDescription;
+		this.taskListName = taskListName;
+	}//end of constructor 
+	
+	//Constructor, both parameters
+	public Task(int _id, String taskDescription, String taskListName) {
+		this._id = _id;
+		this.taskDescription = taskDescription;
+		this.taskListName = taskListName;
+	}//end of constructor
 	
 	//Setters
 	public void setId(int _id) {
@@ -30,6 +41,14 @@ public class Task {
 	public void setTaskDescription(String taskDescription) {
 		this.taskDescription = taskDescription;
 	}//end of setTaskDescription()
+	
+	public void setIsComplete(Boolean taskCompletionStatus) {
+		this.isComplete = taskCompletionStatus;
+	}//end of setIsComplete()
+	
+	public void setTaskListName(String taskListName) {
+		this.taskListName = taskListName;
+	}//end of setTaskListName
 	
 	
 	
@@ -44,6 +63,15 @@ public class Task {
 	public String getTaskDescription() {
 		return taskDescription;
 	}//end of getTaskDescription()
+	
+	public Boolean getCompletionStatus() {
+		return isComplete;
+	}//end of getCompletionStatus()
+	
+	@InstantText(viewId = R.id.list_item_format_TaskListName_txtview)
+	public String getTaskListName() {
+		return taskListName;
+	}//end of getTaskListName
 		
 	
 	
@@ -51,7 +79,10 @@ public class Task {
 	//Instance Variables
 	//Strings
 	String taskDescription;
+	String taskListName;
 	//Integers
 	int _id;
+	//Booleans
+	Boolean isComplete = false;
 	//end of variables
 }//end of class
