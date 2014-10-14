@@ -1141,6 +1141,7 @@ containing a value of this type.
         public static final int agenda_frag_daily_listview=0x7f05003f;
         public static final int agenda_frag_monthly_listview=0x7f050041;
         public static final int agenda_frag_weekly_listview=0x7f050040;
+        public static final int checkBox1=0x7f05004b;
         public static final int daily_frag_daily_listview=0x7f050042;
         public static final int daily_list_item_TaskDescription_txtview=0x7f050044;
         public static final int daily_list_item_TaskId_txtview=0x7f050045;
@@ -1175,7 +1176,6 @@ containing a value of this type.
         public static final int new_task_WeeklyIcon_img=0x7f050055;
         public static final int none=0x7f050004;
         public static final int normal=0x7f050007;
-        public static final int radioButton1=0x7f05004b;
         public static final int right=0x7f050001;
         public static final int selected_view=0x7f050005;
         public static final int settings_frag_about_clickableLinear=0x7f05005c;

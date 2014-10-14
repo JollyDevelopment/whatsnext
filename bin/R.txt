@@ -371,6 +371,7 @@ int id agenda_frag_agenda_listview 0x7f05003e
 int id agenda_frag_daily_listview 0x7f05003f
 int id agenda_frag_monthly_listview 0x7f050041
 int id agenda_frag_weekly_listview 0x7f050040
+int id checkBox1 0x7f05004b
 int id daily_frag_daily_listview 0x7f050042
 int id daily_list_item_TaskDescription_txtview 0x7f050044
 int id daily_list_item_TaskId_txtview 0x7f050045
@@ -405,7 +406,6 @@ int id new_task_WeeklyChoice_radio_btn 0x7f050056
 int id new_task_WeeklyIcon_img 0x7f050055
 int id none 0x7f050004
 int id normal 0x7f050007
-int id radioButton1 0x7f05004b
 int id right 0x7f050001
 int id selected_view 0x7f050005
 int id settings_frag_about_clickableLinear 0x7f05005c
