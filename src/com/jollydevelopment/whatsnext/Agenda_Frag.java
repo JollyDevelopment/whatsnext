@@ -96,19 +96,19 @@ public class Agenda_Frag extends Fragment {
 		//a new Task 
 		Task taskHolder;
 		
-		//a "for loop to pull the Tasks from dailyList		
+		//a for loop to pull the Tasks from dailyList		
 		for (int x = 0; x < dailyList.size(); x++ ) {
 			taskHolder = dailyList.get(x);
 			agendaTasks.add(taskHolder);
 		}//end of daily for loop
 		
-		//a "for loop to pull the Tasks from weeklyList		
+		//a for loop to pull the Tasks from weeklyList		
 		for (int x = 0; x < weeklyList.size(); x++ ) {
 			taskHolder = weeklyList.get(x);
 			agendaTasks.add(taskHolder);
 		}//end of daily for loop		
 		
-		//a "for loop to pull the Tasks from monthlyList		
+		//a for loop to pull the Tasks from monthlyList		
 		for (int x = 0; x < monthlyList.size(); x++ ) {
 			taskHolder = monthlyList.get(x);
 			agendaTasks.add(taskHolder);

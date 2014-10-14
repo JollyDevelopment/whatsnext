@@ -133,7 +133,7 @@ public class StartHere_Responsive extends SlidingFragmentActivity implements fra
 			toggle();
 			break;
 		case R.id.menu_items_add_item:
-			//change the fragment in the Content_Frame to be the New_Task_Frag
+			//change the fragment in the Content_Frame to be the New_Task_Frag when the "+" symbol is pressed
 			getSupportFragmentManager()
 			.beginTransaction()
 			.replace(R.id.starthere_responsive_contentFrame, new New_Task_Frag())
